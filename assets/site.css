@@ -1,0 +1,48 @@
+/* Talktitles site — tokens.json values (color.semantic.light / dark), Figtree + Atkinson Hyperlegible Next (SIL OFL 1.1) */
+@font-face{font-family:"Figtree";src:url("../fonts/Figtree-ExtraBold.ttf") format("truetype");font-weight:800;font-display:swap}
+@font-face{font-family:"Figtree";src:url("../fonts/Figtree-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url("../fonts/AtkinsonHyperlegibleNext-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url("../fonts/AtkinsonHyperlegibleNext-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+:root{--surface:#FFFFFF;--raised:#F3F5F8;--text:#121821;--muted:#4A5565;--primary:#0B6B52;--on-primary:#FFFFFF;--near:#0B6B52;--far:#B23A1E;--near-bg:#DDF7EE;--far-bg:#FFE6DE;--border:#6B7686;--focus:#0B6B52;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--surface:#0B1016;--raised:#1A2330;--text:#F2F5F8;--muted:#A7B2C0;--primary:#54E0B0;--on-primary:#0B1016;--near:#54E0B0;--far:#FF7A59;--near-bg:#0E3B30;--far-bg:#4A1D12;--border:#7F8A9A;--focus:#54E0B0}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--surface);color:var(--text);font:1.0625rem/1.6 "Atkinson Hyperlegible Next",system-ui,sans-serif}
+h1,h2,h3{font-family:"Figtree",system-ui,sans-serif;line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800}
+h2{font-size:1.6rem;font-weight:700;margin-top:1.6em}
+h3{font-size:1.2rem;font-weight:700}
+a{color:var(--primary);text-underline-offset:.15em}
+a:focus-visible,.button:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--raised);color:var(--text);padding:.6rem 1rem}
+.skip-link:focus{left:1rem;top:1rem;z-index:9}
+.site-header{border-bottom:1px solid var(--border)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.6rem;font:700 1.25rem "Figtree",system-ui;color:var(--text);text-decoration:none;min-height:44px}
+.brand svg{width:2.25rem;height:2.25rem;border-radius:.55rem}
+nav ul{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{display:inline-block;padding:.6rem 0;min-height:44px}
+.hero{padding:3rem 0 2rem}
+.lede{font-size:1.25rem;color:var(--text);max-width:40rem}
+.who{background:var(--raised);border-left:4px solid var(--near);padding:1rem 1.25rem;max-width:44rem;border-radius:.5rem}
+.ctas{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.5rem 0 .5rem}
+.button{display:inline-flex;align-items:center;min-height:48px;padding:.7rem 1.3rem;border-radius:999px;background:var(--primary);color:var(--on-primary);font-weight:700;text-decoration:none}
+.button.secondary{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+.note{color:var(--muted);font-size:.95rem}
+.proofs{display:grid;gap:1rem;grid-template-columns:1fr;margin:2rem 0;padding:0;list-style:none}
+@media (min-width:48rem){.proofs{grid-template-columns:repeat(3,1fr)}}
+.proofs li{background:var(--raised);border-radius:1rem;padding:1.25rem;border-top:4px solid var(--near)}
+.proofs li:nth-child(2){border-top-color:var(--far)}
+.shots{display:grid;gap:1.25rem;grid-template-columns:1fr;margin:1.5rem 0}
+@media (min-width:48rem){.shots{grid-template-columns:repeat(3,1fr)}}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;border-radius:1.25rem;border:1px solid var(--border)}
+.shots figcaption{font-size:.95rem;color:var(--muted);margin-top:.5rem}
+.prose{max-width:46rem;padding-bottom:3rem}
+.prose li{margin:.3em 0}
+details{border:1px solid var(--border);border-radius:.75rem;padding:.75rem 1rem;margin:.75rem 0}
+summary{cursor:pointer;font-weight:700;min-height:28px}
+footer{border-top:1px solid var(--border);padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.95rem}
+footer ul{list-style:none;padding:0;display:flex;gap:1.1rem;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
